@@ -2,209 +2,315 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy – Led Banner</title>
   <meta name="description" content="Privacy Policy for Led Banner by NitroX" />
   <style>
-    :root{ --max-width:920px; --bg:#f7f9fb; --card:#fff; --muted:#6b7280; --accent:#0f172a; --radius:12px; --pad:20px; }
-    html,body{height:100%;}
-    /* Use normal document flow so page can scroll to top/bottom normally */
-    body{margin:0;background:var(--bg);color:var(--accent);font-family:Arial, Helvetica, sans-serif;padding:28px 16px;min-height:100vh}
+    :root {
+      --max-width: 900px;
+      --bg: #f7f9fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0f172a;
+      --radius: 14px;
+      --pad: 20px;
+      font-family: Inter, system-ui, sans-serif;
+    }
 
-    /* Center container horizontally, allow vertical scrolling when content taller than viewport */
-    .container{width:100%;max-width:var(--max-width);background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(15,23,42,0.06);margin:20px auto;overflow:auto;max-height:calc(100vh - 40px);}
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg), #ffffff);
+      color: var(--accent);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 32px 16px;
+    }
 
-    header{padding:18px 22px;border-bottom:1px solid rgba(15,23,42,0.06);display:flex;align-items:center;gap:14px}
-    .logo{width:52px;height:52px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#0ea5e9,#7c3aed);color:#fff;font-weight:700}
-    h1{font-size:18px;margin:0}
-    .meta{color:var(--muted);font-size:13px}
-    main{padding:20px}
-    .toc{padding:12px;border-radius:10px;border:1px solid rgba(15,23,42,0.04);background:linear-gradient(180deg, rgba(15,23,42,0.01), transparent);font-size:14px;color:var(--muted);margin-bottom:16px}
-    section{margin-bottom:18px}
-    section h2{font-size:15px;margin:0 0 8px 0}
-    p, li{line-height:1.6;color:var(--accent);margin:0 0 10px 0}
-    ul{margin:0 0 10px 20px}
-    footer{padding:14px 20px;border-top:1px solid rgba(15,23,42,0.04);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
-    .contact{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid rgba(15,23,42,0.06)}
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+      margin: 0 auto;
+      padding: var(--pad);
+    }
 
-    /* Small screens: keep comfortable padding and full-height allowance */
-    @media (max-width:540px){body{padding:18px 12px}.logo{width:44px;height:44px}h1{font-size:17px}main{padding:14px}}
-    a:focus{outline:3px solid rgba(14,165,233,0.18);outline-offset:2px}
+    header {
+      border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-bottom: 12px;
+    }
+
+    .logo {
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.12);
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    section h2 {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+    }
+
+    p, li {
+      line-height: 1.6;
+      color: var(--accent);
+      margin: 0 0 10px 0;
+    }
+
+    ul {
+      margin: 0 0 10px 20px;
+    }
+
+    .toc {
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(15, 23, 42, 0.04);
+      background: rgba(15, 23, 42, 0.01);
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .contact {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+    }
+
+    footer {
+      padding-top: 16px;
+      border-top: 1px solid rgba(15, 23, 42, 0.06);
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    @media (max-width: 540px) {
+      body {
+        padding: 20px 12px;
+      }
+      .logo {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 18px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container" role="document" aria-labelledby="title">
+  <div class="container">
     <header>
-      <div class="logo" aria-hidden>LB</div>
+      <div class="logo">LB</div>
       <div>
-        <h1 id="title">Privacy Policy – Led Banner</h1>
+        <h1>Privacy Policy – Led Banner</h1>
         <div class="meta">Last updated: <time id="lastUpdated">[ngày tháng năm]</time></div>
       </div>
     </header>
 
-    <main>
-      <div class="toc" aria-label="Table of contents">
-        <strong>Mục lục:</strong>
-        <ul style="margin:8px 0 0 18px;padding:0">
-          <li><a href="#intro">1. Introduction</a></li>
-          <li><a href="#collect">2. Information We Collect</a></li>
-          <li><a href="#use">3. How We Use Information</a></li>
-          <li><a href="#third">4. Third-Party Services</a></li>
-          <li><a href="#perm">5. Device Permissions</a></li>
-          <li><a href="#cookies">6. Cookies</a></li>
-          <li><a href="#security">7. Data Security</a></li>
-          <li><a href="#children">8. Children\'s Privacy</a></li>
-          <li><a href="#gdpr">9. GDPR</a></li>
-          <li><a href="#ccpa">10. CCPA</a></li>
-          <li><a href="#transfer">11. International Transfers</a></li>
-          <li><a href="#law">12. Governing Law</a></li>
-          <li><a href="#changes">13. Changes</a></li>
-          <li><a href="#contact">14. Contact</a></li>
-        </ul>
+    <div class="toc">
+      <strong>Table of Contents:</strong>
+      <ul>
+        <li><a href="#intro">1. Introduction</a></li>
+        <li><a href="#collect">2. Information We Collect</a></li>
+        <li><a href="#use">3. How We Use Information</a></li>
+        <li><a href="#third">4. Third-Party Services</a></li>
+        <li><a href="#perm">5. Device Permissions</a></li>
+        <li><a href="#cookies">6. Cookies and Similar Technologies</a></li>
+        <li><a href="#security">7. Data Security</a></li>
+        <li><a href="#children">8. Children’s Privacy</a></li>
+        <li><a href="#gdpr">9. GDPR Compliance</a></li>
+        <li><a href="#ccpa">10. CCPA Compliance</a></li>
+        <li><a href="#transfer">11. International Data Transfers</a></li>
+        <li><a href="#law">12. Governing Law</a></li>
+        <li><a href="#changes">13. Changes to This Policy</a></li>
+        <li><a href="#contact">14. Contact Us</a></li>
+      </ul>
+    </div>
+
+    <section id="intro">
+      <h2>1. Introduction</h2>
+      <p>Led Banner is provided by NitroX as a free mobile application. The Service is offered “as is” without requiring user registration or personal information submission. However, certain non-personal data may be collected automatically through third-party services integrated within the app.</p>
+    </section>
+
+    <section id="collect">
+      <h2>2. Information We Collect</h2>
+      <p>We do not directly collect any personally identifiable information (PII). However, when you use the App, limited technical data may be collected automatically, including:</p>
+      <ul>
+        <li>Device type, model, and operating system version</li>
+        <li>Language and region settings</li>
+        <li>App usage data, crash logs, and performance metrics</li>
+        <li>Advertising identifiers (e.g., Google Advertising ID)</li>
+        <li>Approximate location data (non-precise)</li>
+      </ul>
+      <p>This data is collected to help improve performance, stability, and advertising relevance through third-party tools.</p>
+    </section>
+
+    <section id="use">
+      <h2>3. How We Use Information</h2>
+      <p>Data collected (either by NitroX or through third-party partners) may be used to:</p>
+      <ul>
+        <li>Improve app functionality and user experience</li>
+        <li>Analyze usage trends and app performance</li>
+        <li>Deliver personalized advertisements</li>
+        <li>Diagnose and fix technical issues</li>
+        <li>Maintain and secure the Service</li>
+      </ul>
+      <p>We do not sell, rent, or share personal information with any unauthorized third parties.</p>
+    </section>
+
+    <section id="third">
+      <h2>4. Third-Party Services</h2>
+      <p>The Led Banner app integrates with trusted third-party tools for analytics, advertising, and app performance. Each has its own privacy policy:</p>
+      <ul>
+        <li><a href="https://play.google.com/about/developer-content-policy/" target="_blank" rel="noopener">Google Play Services</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob (Advertising)</a></li>
+        <li><a href="https://ads.google.com/home/" target="_blank" rel="noopener">Google Ads (Marketing & Analytics)</a></li>
+        <li><a href="https://firebase.google.com/terms/analytics" target="_blank" rel="noopener">Firebase (Analytics & Crash Reporting)</a></li>
+        <li><a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">Facebook (Advertising & Social Features)</a></li>
+        <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity (Ads & Game Analytics)</a></li>
+      </ul>
+    </section>
+
+    <section id="perm">
+      <h2>5. Device Permissions</h2>
+      <p>The App may request access to certain features or data on your device. You can manage or revoke these permissions at any time in your device’s system settings:</p>
+      <ul>
+        <li><strong>Camera:</strong> Capture and display banner effects</li>
+        <li><strong>Microphone / Audio:</strong> Record sound for certain video features</li>
+        <li><strong>Storage:</strong> Save, load, or export banners and media files</li>
+        <li><strong>Internet:</strong> Display ads and connect to analytics services</li>
+      </ul>
+    </section>
+
+    <section id="cookies">
+      <h2>6. Cookies and Similar Technologies</h2>
+      <p>While NitroX does not use cookies directly, some third-party SDKs integrated into the App may use cookies or tracking identifiers to collect analytical data or deliver personalized ads. You may disable ad personalization or cookies via your device or Google/Apple account settings.</p>
+    </section>
+
+    <section id="security">
+      <h2>7. Data Security</h2>
+      <p>We use commercially reasonable measures to protect your information from unauthorized access or disclosure. However, no electronic transmission or storage system is completely secure, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section id="children">
+      <h2>8. Children’s Privacy</h2>
+      <p>Our App is not intended for children under 13 years old. We do not knowingly collect personal data from children. If we become aware that a child under 13 has provided information, we will delete it immediately. If you are a parent or guardian and believe your child has shared data with us, please contact us for assistance.</p>
+    </section>
+
+    <section id="gdpr">
+      <h2>9. GDPR Compliance (European Users)</h2>
+      <p>If you are located in the European Economic Area (EEA) or the United Kingdom, you have rights under the General Data Protection Regulation (GDPR), including:</p>
+      <ul>
+        <li>Access, correct, or delete your personal data</li>
+        <li>Restrict or object to processing</li>
+        <li>Data portability</li>
+        <li>Withdraw consent at any time</li>
+      </ul>
+      <p>We process data only for legitimate business interests or as required by law. To exercise GDPR rights, contact: <span id="emailPlaceholder">[your contact email]</span></p>
+    </section>
+
+    <section id="ccpa">
+      <h2>10. CCPA Compliance (California Residents)</h2>
+      <p>Under the California Consumer Privacy Act (CCPA), users residing in California have the right to:</p>
+      <ul>
+        <li>Know what categories of personal information are collected</li>
+        <li>Request access to or deletion of personal information</li>
+        <li>Opt out of the sale of personal data (we do not sell personal data)</li>
+      </ul>
+      <p>To exercise your rights, contact us at: <span id="emailPlaceholder2">[contact email]</span></p>
+    </section>
+
+    <section id="transfer">
+      <h2>11. International Data Transfers</h2>
+      <p>Since we use third-party services such as Google, Facebook, and Unity, some data may be processed on servers located outside your country. By using the app, you consent to such transfers in accordance with this policy.</p>
+    </section>
+
+    <section id="law">
+      <h2>12. Governing Law</h2>
+      <p>This Privacy Policy shall be governed by and interpreted in accordance with the laws of Vietnam. In case of any dispute, the matter shall be resolved under the jurisdiction of the competent courts of Vietnam.</p>
+    </section>
+
+    <section id="changes">
+      <h2>13. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any revisions will take effect immediately once published on this page. You are encouraged to review this policy periodically.</p>
+    </section>
+
+    <section id="contact">
+      <h2>14. Contact Us</h2>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please reach out to us:</p>
+      <div class="contact">
+        <div>Email: <a href="mailto:[contact email]">[contact email]</a></div>
+        <div>Developer: NitroX</div>
+        <div>Application: Led Banner</div>
       </div>
-
-      <section id="intro">
-        <h2>1. Introduction</h2>
-        <p>Led Banner is provided by NitroX as a free mobile application. The Service is offered "as is" without requiring user registration or personal information submission. However, certain non-personal data may be collected automatically through third-party services integrated within the app.</p>
-      </section>
-
-      <section id="collect">
-        <h2>2. Information We Collect</h2>
-        <p>We do not directly collect any personally identifiable information (PII). However, when you use the App, limited technical data may be collected automatically, including:</p>
-        <ul>
-          <li>Device type, model, and operating system version</li>
-          <li>Language and region settings</li>
-          <li>App usage data, crash logs, and performance metrics</li>
-          <li>Advertising identifiers (e.g., Google Advertising ID)</li>
-          <li>Approximate location data (non-precise)</li>
-        </ul>
-        <p>This data is collected to help improve performance, stability, and advertising relevance through third-party tools.</p>
-      </section>
-
-      <section id="use">
-        <h2>3. How We Use Information</h2>
-        <p>Data collected (either by NitroX or through third-party partners) may be used to:</p>
-        <ul>
-          <li>Improve app functionality and user experience</li>
-          <li>Analyze usage trends and app performance</li>
-          <li>Deliver personalized advertisements</li>
-          <li>Diagnose and fix technical issues</li>
-          <li>Maintain and secure the Service</li>
-        </ul>
-        <p>We do not sell, rent, or share personal information with any unauthorized third parties.</p>
-      </section>
-
-      <section id="third">
-        <h2>4. Third-Party Services</h2>
-        <p>The Led Banner app integrates with trusted third-party tools for analytics, advertising, and app performance. Each has its own privacy policy:</p>
-        <ul>
-          <li><a href="https://play.google.com/about/developer-content-policy/" target="_blank" rel="noopener">Google Play Services</a></li>
-          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob (Advertising)</a></li>
-          <li><a href="https://ads.google.com/home/" target="_blank" rel="noopener">Google Ads (Marketing & Analytics)</a></li>
-          <li><a href="https://firebase.google.com/terms/analytics" target="_blank" rel="noopener">Firebase (Analytics & Crash Reporting)</a></li>
-          <li><a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">Facebook (Advertising & Social Features)</a></li>
-          <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity (Ads & Game Analytics)</a></li>
-        </ul>
-      </section>
-
-      <section id="perm">
-        <h2>5. Device Permissions</h2>
-        <p>The App may request access to certain features or data on your device. You can manage or revoke these permissions at any time in your device's system settings:</p>
-        <ul>
-          <li><strong>Camera:</strong> Capture and display banner effects</li>
-          <li><strong>Microphone / Audio:</strong> Record sound for certain video features</li>
-          <li><strong>Storage:</strong> Save, load, or export banners and media files</li>
-          <li><strong>Internet:</strong> Display ads and connect to analytics services</li>
-        </ul>
-      </section>
-
-      <section id="cookies">
-        <h2>6. Cookies and Similar Technologies</h2>
-        <p>While NitroX does not use cookies directly, some third-party SDKs integrated into the App may use cookies or tracking identifiers to collect analytical data or deliver personalized ads. You may disable ad personalization or cookies via your device or Google/Apple account settings.</p>
-      </section>
-
-      <section id="security">
-        <h2>7. Data Security</h2>
-        <p>We use commercially reasonable measures to protect your information from unauthorized access or disclosure. However, no electronic transmission or storage system is completely secure, and we cannot guarantee absolute security.</p>
-      </section>
-
-      <section id="children">
-        <h2>8. Children's Privacy</h2>
-        <p>Our App is not intended for children under 13 years old. We do not knowingly collect personal data from children. If we become aware that a child under 13 has provided information, we will delete it immediately. If you are a parent or guardian and believe your child has shared data with us, please contact us for assistance.</p>
-      </section>
-
-      <section id="gdpr">
-        <h2>9. GDPR Compliance (European Users)</h2>
-        <p>If you are located in the European Economic Area (EEA) or the United Kingdom, you have rights under the General Data Protection Regulation (GDPR), including:</p>
-        <ul>
-          <li>Access, correct, or delete your personal data</li>
-          <li>Restrict or object to processing</li>
-          <li>Data portability</li>
-          <li>Withdraw consent at any time</li>
-        </ul>
-        <p>We process data only for legitimate business interests or as required by law. To exercise GDPR rights, contact: <span id="emailPlaceholder">[your contact email]</span></p>
-      </section>
-
-      <section id="ccpa">
-        <h2>10. CCPA Compliance (California Residents)</h2>
-        <p>Under the California Consumer Privacy Act (CCPA), users residing in California have the right to:</p>
-        <ul>
-          <li>Know what categories of personal information are collected</li>
-          <li>Request access to or deletion of personal information</li>
-          <li>Opt out of the sale of personal data (we do not sell personal data)</li>
-        </ul>
-        <p>To exercise your rights, contact us at: <span id="emailPlaceholder2">[contact email]</span></p>
-      </section>
-
-      <section id="transfer">
-        <h2>11. International Data Transfers</h2>
-        <p>Since we use third-party services such as Google, Facebook, and Unity, some data may be processed on servers located outside your country. By using the app, you consent to such transfers in accordance with this policy.</p>
-      </section>
-
-      <section id="law">
-        <h2>12. Governing Law</h2>
-        <p>This Privacy Policy shall be governed by and interpreted in accordance with the laws of Vietnam. In case of any dispute, the matter shall be resolved under the jurisdiction of the competent courts of Vietnam.</p>
-      </section>
-
-      <section id="changes">
-        <h2>13. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any revisions will take effect immediately once published on this page. You are encouraged to review this policy periodically.</p>
-      </section>
-
-      <section id="contact">
-        <h2>14. Contact Us</h2>
-        <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please reach out to us:</p>
-        <div class="contact">
-          <div>Email: <a id="mailtoLink" href="mailto:[contact email]">[contact email]</a></div>
-          <div>Developer: NitroX</div>
-          <div>Application: Led Banner</div>
-        </div>
-      </section>
-
-    </main>
+    </section>
 
     <footer>
       <div>© NitroX • Led Banner</div>
-      <div><a class="btn" href="#contact">Contact</a></div>
+      <div><a class="btn" href="#top">Back to top</a></div>
     </footer>
   </div>
 
   <script>
-    (function(){
-      var el = document.getElementById('lastUpdated');
-      if(el && el.textContent.indexOf('[') !== -1){
-        var d = new Date();
-        var opts = { year: 'numeric', month: 'long', day: 'numeric' };
-        try{ el.textContent = d.toLocaleDateString('vi-VN', opts); }catch(e){ el.textContent = d.toDateString(); }
+    (function() {
+      const el = document.getElementById('lastUpdated');
+      if (el && el.textContent.includes('[')) {
+        const d = new Date();
+        const opts = { year: 'numeric', month: 'long', day: 'numeric' };
+        el.textContent = d.toLocaleDateString('vi-VN', opts);
       }
-      var params = new URLSearchParams(location.search);
-      var em = params.get('email');
-      if(em){
-        var node1 = document.getElementById('mailtoLink');
-        if(node1){ node1.textContent = em; node1.href = 'mailto:' + em; }
-        var n2 = document.getElementById('emailPlaceholder'); if(n2) n2.textContent = em;
-        var n3 = document.getElementById('emailPlaceholder2'); if(n3) n3.textContent = em;
+
+      function getParam(name) {
+        const params = new URLSearchParams(location.search);
+        return params.get(name);
+      }
+      const e = getParam('email');
+      if (e) {
+        document.querySelectorAll('#emailPlaceholder, #emailPlaceholder2').forEach(n => n.textContent = e);
+        document.querySelectorAll('a[href^="mailto:"]').forEach(a => a.href = 'mailto:' + e);
       }
     })();
   </script>
