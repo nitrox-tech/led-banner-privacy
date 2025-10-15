@@ -1,58 +1,280 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chính sách quyền riêng tư - LED Banner</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy – Led Banner</title>
+  <meta name="description" content="Privacy Policy for Led Banner by NitroX" />
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; color: #333; }
-    h1, h2 { color: #0078d7; }
+    :root{
+      --max-width:900px;
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f172a;
+      --radius:14px;
+      --pad:20px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, var(--bg), #ffffff);
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 8px 30px rgba(15,23,42,0.08);
+      overflow:hidden;
+    }
+
+    header{
+      padding:calc(var(--pad) * 0.8) calc(var(--pad) * 1.2);
+      border-bottom:1px solid rgba(15,23,42,0.06);
+      display:flex;
+      align-items:center;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      display:inline-grid;
+      place-items:center;
+      width:56px;height:56px;border-radius:10px;
+      background:linear-gradient(135deg,#0ea5e9,#7c3aed);
+      color:white;font-weight:700;font-size:18px;
+      box-shadow:0 6px 18px rgba(124,58,237,0.12);
+    }
+
+    h1{font-size:20px;margin:0}
+    .meta{color:var(--muted);font-size:13px}
+
+    main{padding:calc(var(--pad) * 1.1);}
+    .content{padding-bottom:28px}
+
+    section{margin-bottom:20px}
+    section h2{font-size:16px;margin:0 0 10px 0}
+    p, li{line-height:1.55;color:var(--accent);margin:0 0 10px 0}
+    ul{margin:0 0 10px 20px}
+
+    .toc{
+      padding:14px;border-radius:10px;border:1px solid rgba(15,23,42,0.04);
+      background:linear-gradient(180deg, rgba(15,23,42,0.01), transparent);
+      font-size:14px;color:var(--muted);
+      margin-bottom:18px;
+    }
+
+    .contact{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid rgba(15,23,42,0.06)}
+
+    footer{
+      padding:16px 20px;border-top:1px solid rgba(15,23,42,0.04);
+      font-size:13px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px
+    }
+
+    /* Responsive adjustments */
+    @media (max-width:540px){
+      body{padding:20px 12px}
+      .logo{width:48px;height:48px;font-size:16px}
+      h1{font-size:18px}
+      header{gap:10px}
+    }
+
+    /* Accessibility: focus outline for keyboard users */
+    a:focus{outline:3px solid rgba(14,165,233,0.22);outline-offset:2px}
   </style>
 </head>
 <body>
+  <div class="container" role="document" aria-labelledby="title">
+    <header>
+      <div class="logo" aria-hidden>LB</div>
+      <div>
+        <h1 id="title">Privacy Policy – Led Banner</h1>
+        <div class="meta">Last updated: <time id="lastUpdated">[ngày tháng năm]</time></div>
+      </div>
+    </header>
 
-<h1>Chính sách quyền riêng tư</h1>
-<p>Cập nhật lần cuối: <strong>Tháng 10 năm 2025</strong></p>
+    <main>
+      <div class="content">
+        <div class="toc" aria-label="Table of contents">
+          <strong>Ở đây:</strong>
+          <ul style="margin:6px 0 0 18px;padding:0">
+            <li><a href="#intro">1. Introduction</a></li>
+            <li><a href="#collect">2. Information We Collect</a></li>
+            <li><a href="#use">3. How We Use Information</a></li>
+            <li><a href="#third">4. Third-Party Services</a></li>
+            <li><a href="#perm">5. Device Permissions</a></li>
+            <li><a href="#cookies">6. Cookies</a></li>
+            <li><a href="#security">7. Data Security</a></li>
+            <li><a href="#children">8. Children’s Privacy</a></li>
+            <li><a href="#gdpr">9. GDPR</a></li>
+            <li><a href="#ccpa">10. CCPA</a></li>
+            <li><a href="#transfer">11. International Transfers</a></li>
+            <li><a href="#law">12. Governing Law</a></li>
+            <li><a href="#changes">13. Changes</a></li>
+            <li><a href="#contact">14. Contact</a></li>
+          </ul>
+        </div>
 
-<p>Ứng dụng <strong>LED Banner</strong> (sau đây gọi là “chúng tôi”) tôn trọng và cam kết bảo vệ quyền riêng tư của người dùng. 
-Tài liệu này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi sử dụng ứng dụng.</p>
+        <section id="intro">
+          <h2>1. Introduction</h2>
+          <p>Led Banner is provided by NitroX as a free mobile application. The Service is offered “as is” without requiring user registration or personal information submission. However, certain non-personal data may be collected automatically through third-party services integrated within the app.</p>
+        </section>
 
-<h2>1. Thông tin chúng tôi thu thập</h2>
-<p>Ứng dụng LED Banner <strong>không thu thập bất kỳ thông tin cá nhân nào</strong> của người dùng như tên, địa chỉ email, số điện thoại hoặc vị trí.</p>
+        <section id="collect">
+          <h2>2. Information We Collect</h2>
+          <p>We do not directly collect any personally identifiable information (PII). However, when you use the App, limited technical data may be collected automatically, including:</p>
+          <ul>
+            <li>Device type, model, and operating system version</li>
+            <li>Language and region settings</li>
+            <li>App usage data, crash logs, and performance metrics</li>
+            <li>Advertising identifiers (e.g., Google Advertising ID)</li>
+            <li>Approximate location data (non-precise)</li>
+          </ul>
+          <p>This data is collected to help improve performance, stability, and advertising relevance through third-party tools.</p>
+        </section>
 
-<p>Tuy nhiên, ứng dụng có thể sử dụng một số dịch vụ của bên thứ ba (ví dụ: Google AdMob) để hiển thị quảng cáo. 
-Các dịch vụ này có thể tự động thu thập thông tin ẩn danh (ví dụ: mã định danh quảng cáo, loại thiết bị, hệ điều hành) 
-để cá nhân hóa nội dung quảng cáo. Chúng tôi không kiểm soát dữ liệu do các bên thứ ba thu thập.</p>
+        <section id="use">
+          <h2>3. How We Use Information</h2>
+          <p>Data collected (either by NitroX or through third-party partners) may be used to:</p>
+          <ul>
+            <li>Improve app functionality and user experience</li>
+            <li>Analyze usage trends and app performance</li>
+            <li>Deliver personalized advertisements</li>
+            <li>Diagnose and fix technical issues</li>
+            <li>Maintain and secure the Service</li>
+          </ul>
+          <p>We do not sell, rent, or share personal information with any unauthorized third parties.</p>
+        </section>
 
-<h2>2. Mục đích sử dụng dữ liệu</h2>
-<p>Dữ liệu (nếu có) chỉ được dùng cho các mục đích sau:</p>
-<ul>
-  <li>Hiển thị quảng cáo phù hợp hơn với người dùng.</li>
-  <li>Cải thiện trải nghiệm người dùng và hiệu suất của ứng dụng.</li>
-</ul>
+        <section id="third">
+          <h2>4. Third-Party Services</h2>
+          <p>The Led Banner app integrates with trusted third-party tools for analytics, advertising, and app performance. Each has its own privacy policy:</p>
+          <ul>
+            <li><a href="https://play.google.com/about/developer-content-policy/" target="_blank" rel="noopener">Google Play Services</a></li>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob (Advertising)</a></li>
+            <li><a href="https://ads.google.com/home/" target="_blank" rel="noopener">Google Ads (Marketing & Analytics)</a></li>
+            <li><a href="https://firebase.google.com/terms/analytics" target="_blank" rel="noopener">Firebase (Analytics & Crash Reporting)</a></li>
+            <li><a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener">Facebook (Advertising & Social Features)</a></li>
+            <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity (Ads & Game Analytics)</a></li>
+          </ul>
+        </section>
 
-<h2>3. Bên thứ ba và quảng cáo</h2>
-<p>Ứng dụng có thể tích hợp dịch vụ quảng cáo từ Google AdMob hoặc các nhà cung cấp tương tự. 
-Các bên này có thể sử dụng <em>Advertising ID</em> của thiết bị để hiển thị quảng cáo được cá nhân hóa. 
-Người dùng có thể tắt quảng cáo cá nhân hóa trong phần <strong>Cài đặt → Google → Quảng cáo</strong> trên thiết bị Android của mình.</p>
+        <section id="perm">
+          <h2>5. Device Permissions</h2>
+          <p>The App may request access to certain features or data on your device. You can manage or revoke these permissions at any time in your device’s system settings:</p>
+          <ul>
+            <li><strong>Camera:</strong> Capture and display banner effects</li>
+            <li><strong>Microphone / Audio:</strong> Record sound for certain video features</li>
+            <li><strong>Storage:</strong> Save, load, or export banners and media files</li>
+            <li><strong>Internet:</strong> Display ads and connect to analytics services</li>
+          </ul>
+        </section>
 
-<h2>4. Bảo mật thông tin</h2>
-<p>Vì ứng dụng không thu thập thông tin cá nhân, nên chúng tôi không lưu trữ dữ liệu người dùng trên máy chủ. 
-Mọi dữ liệu hiển thị hoặc cài đặt (nếu có) chỉ được lưu cục bộ trên thiết bị của bạn.</p>
+        <section id="cookies">
+          <h2>6. Cookies and Similar Technologies</h2>
+          <p>While NitroX does not use cookies directly, some third-party SDKs integrated into the App may use cookies or tracking identifiers to collect analytical data or deliver personalized ads. You may disable ad personalization or cookies via your device or Google/Apple account settings.</p>
+        </section>
 
-<h2>5. Quyền của người dùng</h2>
-<p>Bạn có thể xóa ứng dụng bất kỳ lúc nào để ngừng toàn bộ việc thu thập và sử dụng dữ liệu (nếu có).</p>
+        <section id="security">
+          <h2>7. Data Security</h2>
+          <p>We use commercially reasonable measures to protect your information from unauthorized access or disclosure. However, no electronic transmission or storage system is completely secure, and we cannot guarantee absolute security.</p>
+        </section>
 
-<h2>6. Thay đổi chính sách</h2>
-<p>Chính sách này có thể được cập nhật theo thời gian để phản ánh thay đổi về tính năng hoặc quy định của Google Play. 
-Khi có cập nhật, chúng tôi sẽ công bố phiên bản mới tại cùng địa chỉ này.</p>
+        <section id="children">
+          <h2>8. Children’s Privacy</h2>
+          <p>Our App is not intended for children under 13 years old. We do not knowingly collect personal data from children. If we become aware that a child under 13 has provided information, we will delete it immediately. If you are a parent or guardian and believe your child has shared data with us, please contact us for assistance.</p>
+        </section>
 
-<h2>7. Liên hệ</h2>
-<p>Nếu bạn có bất kỳ câu hỏi nào liên quan đến Chính sách quyền riêng tư này, vui lòng liên hệ qua email:</p>
-<p><strong>marcodzuong@gmail.com</strong></p>
+        <section id="gdpr">
+          <h2>9. GDPR Compliance (European Users)</h2>
+          <p>If you are located in the European Economic Area (EEA) or the United Kingdom, you have rights under the General Data Protection Regulation (GDPR), including:</p>
+          <ul>
+            <li>Access, correct, or delete your personal data</li>
+            <li>Restrict or object to processing</li>
+            <li>Data portability</li>
+            <li>Withdraw consent at any time</li>
+          </ul>
+          <p>We process data only for legitimate business interests or as required by law. To exercise GDPR rights, contact: <span id="emailPlaceholder">[your contact email]</span></p>
+        </section>
 
-<hr>
-<p><em>Bản quyền © 2025 – Ứng dụng LED Banner.</em></p>
+        <section id="ccpa">
+          <h2>10. CCPA Compliance (California Residents)</h2>
+          <p>Under the California Consumer Privacy Act (CCPA), users residing in California have the right to:</p>
+          <ul>
+            <li>Know what categories of personal information are collected</li>
+            <li>Request access to or deletion of personal information</li>
+            <li>Opt out of the sale of personal data (we do not sell personal data)</li>
+          </ul>
+          <p>To exercise your rights, contact us at: <span id="emailPlaceholder2">[contact email]</span></p>
+        </section>
 
+        <section id="transfer">
+          <h2>11. International Data Transfers</h2>
+          <p>Since we use third-party services such as Google, Facebook, and Unity, some data may be processed on servers located outside your country. By using the app, you consent to such transfers in accordance with this policy.</p>
+        </section>
+
+        <section id="law">
+          <h2>12. Governing Law</h2>
+          <p>This Privacy Policy shall be governed by and interpreted in accordance with the laws of Vietnam. In case of any dispute, the matter shall be resolved under the jurisdiction of the competent courts of Vietnam.</p>
+        </section>
+
+        <section id="changes">
+          <h2>13. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. Any revisions will take effect immediately once published on this page. You are encouraged to review this policy periodically.</p>
+        </section>
+
+        <section id="contact">
+          <h2>14. Contact Us</h2>
+          <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please reach out to us:</p>
+          <div class="contact">
+            <div>Email: <a href="mailto:[contact email]">[contact email]</a></div>
+            <div>Developer: NitroX</div>
+            <div>Application: Led Banner</div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer>
+      <div>© NitroX • Led Banner</div>
+      <div><a class="btn" href="#contact">Contact</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // Replace the placeholder date with today's date if a proper date isn't provided.
+    (function(){
+      const el = document.getElementById('lastUpdated');
+      if(el && el.textContent.includes('[')){
+        const d = new Date();
+        const opts = { year: 'numeric', month: 'long', day: 'numeric' };
+        el.textContent = d.toLocaleDateString('vi-VN', opts);
+      }
+
+      // Replace email placeholders if developer wants to quickly inject their email via query param
+      function getParam(name){
+        const params = new URLSearchParams(location.search);
+        return params.get(name);
+      }
+      const e = getParam('email');
+      if(e){
+        document.querySelectorAll('#emailPlaceholder, #emailPlaceholder2').forEach(n=>n.textContent = e);
+        document.querySelectorAll('a[href^="mailto:"]').forEach(a=>a.href = 'mailto:' + e);
+      }
+    })();
+  </script>
 </body>
 </html>
