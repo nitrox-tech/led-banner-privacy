@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support – Led Banner</title>
+  <meta name="description" content="Support and Help Center for Led Banner by NitroX" />
+  <style>
+    :root {
+      --max-width: 900px;
+      --bg: #f7f9fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0f172a;
+      --radius: 14px;
+      --pad: 20px;
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg), #ffffff);
+      color: var(--accent);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 32px 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+      margin: 0 auto;
+      padding: var(--pad);
+    }
+
+    header {
+      border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-bottom: 12px;
+    }
+
+    .logo {
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.12);
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    section h2 {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+    }
+
+    p, li {
+      line-height: 1.6;
+      color: var(--accent);
+      margin: 0 0 10px 0;
+    }
+
+    ul {
+      margin: 0 0 10px 20px;
+    }
+
+    .toc {
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(15, 23, 42, 0.04);
+      background: rgba(15, 23, 42, 0.01);
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .contact {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      color: var(--accent);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+      color: white;
+      border: none;
+    }
+
+    footer {
+      padding-top: 16px;
+      border-top: 1px solid rgba(15, 23, 42, 0.06);
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .highlight-box {
+      background: rgba(14, 165, 233, 0.05);
+      border-left: 4px solid #0ea5e9;
+      padding: 14px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --pad: 16px;
+      }
+      
+      body {
+        padding: 16px 12px;
+        font-size: 15px;
+      }
+      
+      .container {
+        padding: 16px;
+      }
+      
+      header {
+        gap: 12px;
+        padding-bottom: 10px;
+      }
+      
+      .logo {
+        width: 44px;
+        height: 44px;
+        font-size: 15px;
+      }
+      
+      h1 {
+        font-size: 18px;
+        line-height: 1.3;
+      }
+      
+      .meta {
+        font-size: 12px;
+      }
+      
+      section {
+        margin-bottom: 20px;
+      }
+      
+      section h2 {
+        font-size: 15px;
+        margin: 0 0 8px 0;
+      }
+      
+      section h3 {
+        font-size: 14px;
+        margin: 12px 0 6px 0;
+      }
+      
+      p, li {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0 0 8px 0;
+      }
+      
+      ul {
+        margin: 0 0 8px 16px;
+        padding-left: 4px;
+      }
+      
+      li {
+        margin-bottom: 6px;
+      }
+      
+      .toc {
+        padding: 12px;
+        font-size: 13px;
+        margin-bottom: 16px;
+      }
+      
+      .toc ul {
+        margin-left: 16px;
+      }
+      
+      .toc li {
+        margin-bottom: 4px;
+      }
+      
+      .contact {
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .btn {
+        padding: 10px 16px;
+        font-size: 14px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .btn-primary {
+        min-height: 44px;
+      }
+      
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding-top: 12px;
+      }
+      
+      footer > div {
+        width: 100%;
+      }
+      
+      footer .btn {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      
+      .highlight-box {
+        padding: 12px;
+        font-size: 13px;
+        margin: 12px 0;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      body {
+        padding: 12px 8px;
+      }
+      
+      .container {
+        padding: 12px;
+        border-radius: 12px;
+      }
+      
+      .logo {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+      }
+      
+      h1 {
+        font-size: 16px;
+      }
+      
+      section h2 {
+        font-size: 14px;
+      }
+      
+      section h3 {
+        font-size: 13px;
+      }
+      
+      p, li {
+        font-size: 13px;
+      }
+      
+      .toc {
+        font-size: 12px;
+        padding: 10px;
+      }
+      
+      .highlight-box {
+        font-size: 12px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">LB</div>
+      <div>
+        <h1>Support & Help Center – Led Banner</h1>
+        <div class="meta">Last updated: <time id="lastUpdated">[ngày tháng năm]</time></div>
+      </div>
+    </header>
+
+    <div class="toc">
+      <strong>Quick Navigation:</strong>
+      <ul>
+        <li><a href="#welcome">1. Welcome</a></li>
+        <li><a href="#faq">2. Frequently Asked Questions</a></li>
+        <li><a href="#features">3. App Features Guide</a></li>
+        <li><a href="#troubleshooting">4. Troubleshooting</a></li>
+        <li><a href="#permissions">5. Permissions & Settings</a></li>
+        <li><a href="#feedback">6. Feedback & Suggestions</a></li>
+        <li><a href="#contact">7. Contact Support</a></li>
+      </ul>
+    </div>
+
+    <section id="welcome">
+      <h2>1. Welcome to Led Banner Support</h2>
+      <p>Thank you for using Led Banner by NitroX! We're here to help you get the most out of our app. If you have any questions, need assistance, or want to report an issue, you've come to the right place.</p>
+      <div class="highlight-box">
+        <p><strong>Need immediate help?</strong> Scroll down to our <a href="#contact">Contact Support</a> section to reach out directly via email.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>2. Frequently Asked Questions</h2>
+      
+      <h3>What is Led Banner?</h3>
+      <p>Led Banner is a free mobile application that allows you to create and display LED-style banner effects. You can customize text, colors, animations, and effects to create eye-catching banners.</p>
+
+      <h3>Is the app free to use?</h3>
+      <p>Yes, Led Banner is completely free to download and use. The app is supported by advertisements, which help us continue to provide and improve the service.</p>
+
+      <h3>Does the app collect personal information?</h3>
+      <p>Led Banner does not require user registration or personal information submission. We may collect limited technical data to improve app performance and stability. For detailed information, please see our <a href="/privacy/" target="_blank">Privacy Policy</a>.</p>
+
+      <h3>How do I save or export my banners?</h3>
+      <p>You can save your banner creations directly to your device's storage. The app will request storage permission to save your work. You can also share your banners directly from the app.</p>
+
+      <h3>Can I use the app offline?</h3>
+      <p>Most features work offline, but some features like advertisements and analytics require an internet connection.</p>
+    </section>
+
+    <section id="features">
+      <h2>3. App Features Guide</h2>
+      
+      <h3>Creating Banners</h3>
+      <ul>
+        <li>Open the app and tap the create button</li>
+        <li>Enter your desired text</li>
+        <li>Customize colors, fonts, and effects</li>
+        <li>Preview your banner in real-time</li>
+        <li>Save or share your creation</li>
+      </ul>
+
+      <h3>Customization Options</h3>
+      <ul>
+        <li><strong>Text:</strong> Change text content, size, and style</li>
+        <li><strong>Colors:</strong> Customize text and background colors</li>
+        <li><strong>Effects:</strong> Apply animations and LED-style effects</li>
+        <li><strong>Camera:</strong> Use camera to capture and display banner effects</li>
+        <li><strong>Audio:</strong> Record sound for video features (if available)</li>
+      </ul>
+    </section>
+
+    <section id="troubleshooting">
+      <h2>4. Troubleshooting</h2>
+      
+      <h3>App crashes or won't open</h3>
+      <ul>
+        <li>Try restarting your device</li>
+        <li>Ensure you have the latest version of the app installed</li>
+        <li>Check if your device meets the minimum system requirements</li>
+        <li>Clear the app cache (Settings → Apps → Led Banner → Clear Cache)</li>
+      </ul>
+
+      <h3>Camera or microphone not working</h3>
+      <ul>
+        <li>Check that the app has permission to access camera/microphone in your device settings</li>
+        <li>Make sure no other apps are using the camera or microphone</li>
+        <li>Restart the app after granting permissions</li>
+      </ul>
+
+      <h3>Can't save banners</h3>
+      <ul>
+        <li>Ensure the app has storage permission enabled</li>
+        <li>Check that you have enough storage space on your device</li>
+        <li>Try saving to a different location if available</li>
+      </ul>
+
+      <h3>Ads are not displaying</h3>
+      <ul>
+        <li>Check your internet connection</li>
+        <li>Ensure ad blockers are disabled (if applicable)</li>
+        <li>Wait a few moments and try again</li>
+      </ul>
+    </section>
+
+    <section id="permissions">
+      <h2>5. Permissions & Settings</h2>
+      <p>Led Banner may request the following permissions to provide full functionality:</p>
+      <ul>
+        <li><strong>Camera:</strong> To capture and display banner effects with real-time preview</li>
+        <li><strong>Microphone/Audio:</strong> To record sound for video features (if applicable)</li>
+        <li><strong>Storage:</strong> To save, load, and export your banner creations</li>
+        <li><strong>Internet:</strong> To display advertisements and sync analytics (for app improvement)</li>
+      </ul>
+      <p>You can manage or revoke these permissions at any time in your device's system settings. Note that some features may not work properly if permissions are denied.</p>
+    </section>
+
+    <section id="feedback">
+      <h2>6. Feedback & Suggestions</h2>
+      <p>We value your feedback! If you have suggestions for new features, improvements, or want to share your experience with Led Banner, please don't hesitate to contact us. Your input helps us make the app better for everyone.</p>
+      <div class="highlight-box">
+        <p>Have a feature request or found a bug? Reach out to us through the <a href="#contact">Contact Support</a> section below.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>7. Contact Support</h2>
+      <p>If you need additional assistance, have questions, want to report a bug, or have feedback, please contact us:</p>
+      <div class="contact" style="display:block; line-height:1.6;">
+        <div><strong>Email:</strong> <a href="mailto:marcodzuong@gmail.com">marcodzuong@gmail.com</a></div>
+        <div><strong>Developer:</strong> NitroX</div>
+        <div><strong>Application:</strong> Led Banner</div>
+      </div>
+      <div style="margin-top: 16px;">
+        <p><strong>When contacting support, please include:</strong></p>
+        <ul>
+          <li>Description of your issue or question</li>
+          <li>Device model and operating system version</li>
+          <li>App version (if available)</li>
+          <li>Steps to reproduce the issue (if reporting a bug)</li>
+        </ul>
+      </div>
+      <div style="margin-top: 20px;">
+        <a href="mailto:marcodzuong@gmail.com?subject=Led Banner Support Request" class="btn btn-primary">Send Support Email</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>© NitroX • Led Banner</div>
+      <div>
+        <a class="btn" href="/privacy/" style="margin-right: 8px;">Privacy Policy</a>
+        <a class="btn" href="#top">Back to top</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      const el = document.getElementById('lastUpdated');
+      if (el && el.textContent.includes('[')) {
+        const d = new Date();
+        const opts = { year: 'numeric', month: 'long', day: 'numeric' };
+        el.textContent = d.toLocaleDateString('vi-VN', opts);
+      }
+    })();
+  </script>
+</body>
+</html>
+

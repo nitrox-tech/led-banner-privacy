@@ -125,17 +125,141 @@
       gap: 8px;
     }
 
-    @media (max-width: 540px) {
+    @media (max-width: 768px) {
+      :root {
+        --pad: 16px;
+      }
+      
       body {
-        padding: 20px 12px;
+        padding: 16px 12px;
+        font-size: 15px;
       }
+      
+      .container {
+        padding: 16px;
+      }
+      
+      header {
+        gap: 12px;
+        padding-bottom: 10px;
+      }
+      
       .logo {
-        width: 48px;
-        height: 48px;
-        font-size: 16px;
+        width: 44px;
+        height: 44px;
+        font-size: 15px;
       }
+      
       h1 {
         font-size: 18px;
+        line-height: 1.3;
+      }
+      
+      .meta {
+        font-size: 12px;
+      }
+      
+      section {
+        margin-bottom: 20px;
+      }
+      
+      section h2 {
+        font-size: 15px;
+        margin: 0 0 8px 0;
+      }
+      
+      section h3 {
+        font-size: 14px;
+        margin: 12px 0 6px 0;
+      }
+      
+      p, li {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0 0 8px 0;
+      }
+      
+      ul {
+        margin: 0 0 8px 16px;
+        padding-left: 4px;
+      }
+      
+      li {
+        margin-bottom: 6px;
+      }
+      
+      .toc {
+        padding: 12px;
+        font-size: 13px;
+        margin-bottom: 16px;
+      }
+      
+      .toc ul {
+        margin-left: 16px;
+      }
+      
+      .toc li {
+        margin-bottom: 4px;
+      }
+      
+      .contact {
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .btn {
+        padding: 10px 16px;
+        font-size: 14px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding-top: 12px;
+      }
+      
+      footer > div {
+        width: 100%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      body {
+        padding: 12px 8px;
+      }
+      
+      .container {
+        padding: 12px;
+        border-radius: 12px;
+      }
+      
+      .logo {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+      }
+      
+      h1 {
+        font-size: 16px;
+      }
+      
+      section h2 {
+        font-size: 14px;
+      }
+      
+      p, li {
+        font-size: 13px;
+      }
+      
+      .toc {
+        font-size: 12px;
+        padding: 10px;
       }
     }
   </style>
@@ -160,7 +284,7 @@
         <li><a href="#perm">5. Device Permissions</a></li>
         <li><a href="#cookies">6. Cookies and Similar Technologies</a></li>
         <li><a href="#security">7. Data Security</a></li>
-        <li><a href="#children">8. Children’s Privacy</a></li>
+        <li><a href="#children">8. Children's Privacy</a></li>
         <li><a href="#gdpr">9. GDPR Compliance</a></li>
         <li><a href="#ccpa">10. CCPA Compliance</a></li>
         <li><a href="#transfer">11. International Data Transfers</a></li>
@@ -172,7 +296,7 @@
 
     <section id="intro">
       <h2>1. Introduction</h2>
-      <p>Led Banner is provided by NitroX as a free mobile application. The Service is offered “as is” without requiring user registration or personal information submission. However, certain non-personal data may be collected automatically through third-party services integrated within the app.</p>
+      <p>Led Banner is provided by NitroX as a free mobile application. The Service is offered "as is" without requiring user registration or personal information submission. However, certain non-personal data may be collected automatically through third-party services integrated within the app.</p>
     </section>
 
     <section id="collect">
@@ -216,7 +340,7 @@
 
     <section id="perm">
       <h2>5. Device Permissions</h2>
-      <p>The App may request access to certain features or data on your device. You can manage or revoke these permissions at any time in your device’s system settings:</p>
+      <p>The App may request access to certain features or data on your device. You can manage or revoke these permissions at any time in your device's system settings:</p>
       <ul>
         <li><strong>Camera:</strong> Capture and display banner effects</li>
         <li><strong>Microphone / Audio:</strong> Record sound for certain video features</li>
@@ -236,7 +360,7 @@
     </section>
 
     <section id="children">
-      <h2>8. Children’s Privacy</h2>
+      <h2>8. Children's Privacy</h2>
       <p>Our App is not intended for children under 13 years old. We do not knowingly collect personal data from children. If we become aware that a child under 13 has provided information, we will delete it immediately. If you are a parent or guardian and believe your child has shared data with us, please contact us for assistance.</p>
     </section>
 
@@ -249,7 +373,7 @@
         <li>Data portability</li>
         <li>Withdraw consent at any time</li>
       </ul>
-      <p>We process data only for legitimate business interests or as required by law. To exercise GDPR rights, contact: <span id="emailPlaceholder">[your contact email]</span></p>
+      <p>We process data only for legitimate business interests or as required by law. To exercise GDPR rights, contact: <span id="emailPlaceholder">marcodzuong@gmail.com</span></p>
     </section>
 
     <section id="ccpa">
@@ -260,7 +384,7 @@
         <li>Request access to or deletion of personal information</li>
         <li>Opt out of the sale of personal data (we do not sell personal data)</li>
       </ul>
-      <p>To exercise your rights, contact us at: <span id="emailPlaceholder2">[contact email]</span></p>
+      <p>To exercise your rights, contact us at: <span id="emailPlaceholder2">marcodzuong@gmail.com</span></p>
     </section>
 
     <section id="transfer">
@@ -316,3 +440,4 @@
   </script>
 </body>
 </html>
+
